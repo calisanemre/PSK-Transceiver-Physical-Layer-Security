@@ -3,7 +3,7 @@
 % framework under the influence of Artificial Noise (AN).
 
 clc; clear; close all;
-
+addpath(genpath('../src'));
 %% 1. Parameter Configuration
 EbNo = 30;                  % Channel noise level (dB)
 alphaAN_vec = 0.1:0.3:1.0;  % Artificial Noise variance range (Sweep)
@@ -96,4 +96,5 @@ loglog(alphaAN_vec, max(BER_target, 1e-6), 'b-o', 'LineWidth', 1.5); hold on;
 loglog(alphaAN_vec, max(BER_hidden, 1e-6), 'r-s', 'LineWidth', 1.5);
 grid on;
 xlabel('\alpha_{AN}'); ylabel('BER (Log Scale)');
+
 title('BER vs. Artificial Noise Power (Logarithmic Scale)');
