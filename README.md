@@ -2,7 +2,7 @@
 
 This repository contains a full PSK transceiver chain implemented in MATLAB, focusing on synchronization and **Physical Layer Security (PLS)**. It demonstrates how artificial noise can protect data from unauthorized eavesdroppers.
 
----
+----
 
 ## English Description
 
